@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="one-page">
+    <section class="page">
       <div class="container">
         <contact-info></contact-info>
         <name/>
@@ -67,4 +67,24 @@ export default {
   }
 }
 </script>
+
+<style scoped lang="scss">
+  .page {
+    width: 210mm;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    -webkit-print-color-adjust: exact;
+
+    @media print {
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+  }
+
+  .container {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+</style>
 
