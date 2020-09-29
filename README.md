@@ -1,4 +1,13 @@
-# cv
+## Michał Mazurek - Resume
+
+## My Resume
+https://michalgmazurek.github.io/CV
+
+## Deploy
+```
+yarn build
+git push origin `git subtree split --prefix build_folder master`:gh-pages --force
+```
 
 ## Project setup
 ```
