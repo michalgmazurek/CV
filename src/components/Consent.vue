@@ -1,5 +1,5 @@
 <template>
-  <article>
+  <article class="art">
     <p class="consent">
       I grant my consent to process my personal data included in the offer of employment for the purposes
       required in the process of recruitment, according to the Personal data Protection Act from
@@ -26,6 +26,7 @@ export default {
 
     @media print {
       padding-bottom: 0;
+      color: lightgrey;
     }
   }
 
