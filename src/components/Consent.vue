@@ -26,7 +26,7 @@ export default {
 
     @media print {
       padding-bottom: 0;
-      color: lightgrey;
+      /*margin-top: 230px;*/
     }
   }
 
