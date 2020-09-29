@@ -1,0 +1,18 @@
+<template>
+  <article>
+    <p class="text--tiny">
+      I grant my consent to process my personal data included in the offer of employment for the purposes
+      required in the process of recruitment, according to the Personal data Protection Act from
+      29.08.1997.” <br> "Wyrażam zgodę na przetwarzanie
+      moich danych osobowych dla potrzeb procesu rekrutacji (zgodnie z ustawą o ochronie danych osobowych
+      z dnia 29.08.1997 Dz.U. z 2002 r. Nr 101, pozycja 926 z późn.zm.)"
+    </p>
+  </article>
+</template>
+
+<script>
+
+export default {
+  name: 'Consent',
+}
+</script>
