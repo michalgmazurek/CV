@@ -6,8 +6,10 @@ https://michalgmazurek.github.io/CV
 ## Deploy
 ```
 yarn build
-git push origin `git subtree split --prefix build_folder master`:gh-pages --force
+git subtree push --prefix dist origin gh-pages
+git checkout gh-pages
 ```
+and push commit :)
 
 ## Project setup
 ```
