@@ -1,9 +1,27 @@
 export default [
   {
+    companyName: '1010 Data',
+    position: 'Senior Front-end Developer',
+    startDate: 'Jul 2021',
+    endDate: 'still',
+    responsibilities: [
+      {
+        point: 'Developing new functionalities and services (Vue, XState, Rest, WebSockets)',
+      },
+      {
+        point: 'Developing new project for big data analysis',
+      },
+      {
+        point: 'Day to day work with US based team (NY) - fully remote',
+      },
+    ],
+  },
+  
+  {
     companyName: 'Docplanner (ZnanyLekarz.pl)',
     position: 'Front-end Developer',
     startDate: 'Mar 2019',
-    endDate: 'still',
+    endDate: 'Jul 2021',
     responsibilities: [
       {
         point: 'Developing new functionalities and services (Vue, Vuex, GraphQL, Jest, jQuery, JS, Rest)',

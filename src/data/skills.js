@@ -12,6 +12,9 @@ export default [
     text: 'Vuex',
   },
   {
+    text: 'XState',
+  },
+  {
     text: 'React',
   },
   {

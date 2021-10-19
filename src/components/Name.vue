@@ -2,7 +2,7 @@
   <article>
     <h1 class="header">Michał Mazurek</h1>
     <h2 class="subheader subheader--position">
-      Front-end Developer
+      Senior Front-end Developer
     </h2>
   </article>
 </template>
