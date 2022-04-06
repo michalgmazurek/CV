@@ -1,4 +1,19 @@
 export default [
+    {
+    companyName: 'TokenForge.io',
+    position: 'Senior Front-end Developer',
+    startDate: 'Oct 2021',
+    endDate: 'still',
+    responsibilities: [
+      {
+        point: 'Developing new functionalities and services (Vue, Vuex, Rest,GraphQl, WebSockets)',
+      },
+      {
+        point: 'Developing new applications for NFT/Blockchain industry',
+      },
+    ],
+  },
+
   {
     companyName: '1010 Data',
     position: 'Senior Front-end Developer',
@@ -110,27 +125,6 @@ export default [
       {
         point: 'Developing front-end of the internal web applications (React, Redux, JS, Twig, HTML, CSS, Jest)',
       },
-      {
-        point: 'Landing Pages (end-to-end)',
-      },
-      {
-        point: 'Writing tests (Mocha, Nightmare.js, Jest)',
-      },
-      {
-        point: 'Writing documentation',
-      },
-      {
-        point: 'PSD to HTML/CSS',
-      },
-      {
-        point: 'Contact with Coders Lab students (code review)',
-      },
-      {
-        point: 'Cooperation with Marketing Department',
-      },
-      {
-        point: 'Correction of Coders Lab teaching resources',
-      },
     ],
   },
 
@@ -146,12 +140,6 @@ export default [
       {
         point: 'IT Recruitment (Front-end, RoR, Python, PHP, JAVA, .NET)',
       },
-      {
-        point: 'Recruiting and part-time CL Lecturers',
-      },
-      {
-        point: 'Arranging and managing interviews',
-      },
     ],
   },
 
@@ -160,14 +148,7 @@ export default [
     position: 'Researcher',
     startDate: 'Nov 2014',
     endDate: 'May 2015',
-    responsibilities: [
-      {
-        point: 'Participation in recruiting projects',
-      },
-      {
-        point: 'Market research and analysis',
-      },
-    ],
+    responsibilities: [],
   },
 
   {
@@ -175,10 +156,6 @@ export default [
     position: 'Research Analyst',
     startDate: 'Nov 2010',
     endDate: 'Nov 2014',
-    responsibilities: [
-      {
-        point: 'Participation in recruiting projects',
-      },
-    ],
+    responsibilities: [],
   },
 ];
