@@ -15,20 +15,20 @@
 
 <script>
 
-import ExperienceItem from './ExperienceItem';
+import ExperienceItem from './ExperienceItem'
 
 export default {
   name: 'Experience',
 
   components: {
-    ExperienceItem,
+    ExperienceItem
   },
 
   props: {
     experienceItems: {
       type: Array,
-      required: true,
-    },
+      required: true
+    }
   }
 }
 </script>

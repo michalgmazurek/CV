@@ -12,23 +12,23 @@
 
 <script>
 
-import ResponsibilitiesItem from './ResponsibilitiesItem';
+import ResponsibilitiesItem from './ResponsibilitiesItem'
 
 export default {
   name: 'Responsibilities',
 
   components: {
-    ResponsibilitiesItem,
+    ResponsibilitiesItem
   },
 
   props: {
     responsibilities: {
       type: Array,
-      required: true,
+      required: true
     },
     companyName: {
       type: String,
-      required: true,
+      required: true
     }
   }
 }

@@ -12,7 +12,7 @@ export default {
   props: {
     responsibility: {
       type: Object,
-      required: true,
+      required: true
     }
   }
 }

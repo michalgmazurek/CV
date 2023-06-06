@@ -14,36 +14,36 @@
 
 <script>
 
-import Responsibilities from './Responsibilities';
+import Responsibilities from './Responsibilities'
 
 export default {
   name: 'ExperienceItem',
 
   components: {
-    Responsibilities,
+    Responsibilities
   },
 
   props: {
     companyName: {
       type: String,
-      required: true,
+      required: true
     },
     position: {
       type: String,
-      required: true,
+      required: true
     },
     startDate: {
       type: String,
-      required: true,
+      required: true
     },
     endDate: {
       type: String,
-      required: true,
+      required: true
     },
     responsibilities: {
       type: Array,
-      required: true,
+      required: true
     }
-  },
+  }
 }
 </script>

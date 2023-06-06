@@ -10,23 +10,23 @@ export default {
   computed: {
     tagClass() {
       if (this.wider) {
-        return 'tag tag--wider';
+        return 'tag tag--wider'
       }
 
-      return 'tag';
-    },
+      return 'tag'
+    }
   },
 
   props: {
     text: {
       type: String,
-      required: true,
+      required: true
     },
     wider: {
       type: Boolean,
       required: false,
-      default: false,
+      default: false
     }
-  },
+  }
 }
 </script>

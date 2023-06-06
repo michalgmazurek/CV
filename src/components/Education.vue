@@ -14,20 +14,20 @@
 
 <script>
 
-import EducationItem from './EducationItem';
+import EducationItem from './EducationItem'
 
 export default {
   name: 'Education',
 
   components: {
-    EducationItem,
+    EducationItem
   },
 
   props: {
     EducationItems: {
       type: Array,
-      required: true,
-    },
+      required: true
+    }
   }
 }
 </script>

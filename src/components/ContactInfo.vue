@@ -48,75 +48,75 @@ export default {
 
   methods: {
     print() {
-      window.print();
-    },
+      window.print()
+    }
   }
 }
 </script>
 
 <style scoped lang="scss">
-  .contact-info {
-    display: flex;
-    flex-direction: row;
-    align-content: space-around;
-    justify-content: left;
-  }
+.contact-info {
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  justify-content: left;
+}
 
-  .photo {
-    width: 150px;
-    border-radius: 50%;
-    margin: 20px 20px 20px 0;
-  }
+.photo {
+  width: 150px;
+  border-radius: 50%;
+  margin: 20px 20px 20px 0;
+}
 
-  .contact {
-    margin-left: 30px;
-    align-self: center;
-    list-style: none;
-    font-size: 12px;
+.contact {
+  margin-left: 30px;
+  align-self: center;
+  list-style: none;
+  font-size: 12px;
 
-    .fa {
-      margin-right: 15px;
-      color: #2ECC71;
-      font-weight: 600;
-      width: 15px;
-    }
-
-    li {
-      width: 230px;
-    }
-  }
-
-  .print-button {
-    display: block;
-    height: 30px;
-    width: 120px;
-    background-color: #2ECC71;
-    color: #EEEEEE;
-    text-align: center;
-    border: none;
-    border-radius: 10px;
-    line-height: 30px;
+  .fa {
+    margin-right: 15px;
+    color: #2ECC71;
     font-weight: 600;
-    font-size: 13px;
-    margin: auto;
-    cursor: pointer;
-    outline: none;
+    width: 15px;
+  }
 
-    &__container {
-      display: flex;
-      margin-left: auto;
+  li {
+    width: 230px;
+  }
+}
 
-      @media print {
-        display: none;
-      }
+.print-button {
+  display: block;
+  height: 30px;
+  width: 120px;
+  background-color: #2ECC71;
+  color: #EEEEEE;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  line-height: 30px;
+  font-weight: 600;
+  font-size: 13px;
+  margin: auto;
+  cursor: pointer;
+  outline: none;
+
+  &__container {
+    display: flex;
+    margin-left: auto;
+
+    @media print {
+      display: none;
     }
   }
+}
 
-  a {
-    text-decoration: none;
-  }
+a {
+  text-decoration: none;
+}
 
-  button:active {
-    background-color: #4daf7c;
-  }
+button:active {
+  background-color: #4daf7c;
+}
 </style>

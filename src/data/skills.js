@@ -1,59 +1,59 @@
 export default [
   {
-    text: 'JS (ES6)',
+    text: 'JS (ES6)'
   },
   {
-    text: 'TypeScript',
+    text: 'TypeScript'
   },
   {
-    text: 'Vue',
+    text: 'Vue'
   },
   {
-    text: 'Vuex',
+    text: 'Vuex'
   },
   {
-    text: 'XState',
+    text: 'XState'
   },
   {
-    text: 'React',
+    text: 'React'
   },
   {
-    text: 'Redux',
+    text: 'Redux'
   },
   {
-    text: 'Angular 2-6',
+    text: 'Angular 2-6'
   },
   {
-    text: 'jQuery',
+    text: 'jQuery'
   },
   {
-    text: 'Ajax',
+    text: 'Ajax'
   },
   {
-    text: 'Rest',
+    text: 'Rest'
   },
   {
-    text: 'GraphQL',
+    text: 'GraphQL'
   },
   {
-    text: 'Jest',
+    text: 'Jest'
   },
   {
-    text: 'Webpack',
+    text: 'Webpack'
   },
   {
-    text: 'Docker',
+    text: 'Docker'
   },
   {
-    text: 'HTML',
+    text: 'HTML'
   },
   {
-    text: 'CSS',
+    text: 'CSS'
   },
   {
-    text: 'SCSS',
+    text: 'SCSS'
   },
   {
-    text: 'Bootstrap',
-  },
-];
+    text: 'Bootstrap'
+  }
+]

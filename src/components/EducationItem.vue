@@ -14,20 +14,20 @@ export default {
   props: {
     companyName: {
       type: String,
-      required: true,
+      required: true
     },
     position: {
       type: String,
-      required: true,
+      required: true
     },
     startDate: {
       type: String,
-      required: true,
+      required: true
     },
     endDate: {
       type: String,
-      required: true,
-    },
-  },
+      required: true
+    }
+  }
 }
 </script>

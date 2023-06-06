@@ -14,20 +14,20 @@
 
 <script>
 
-import Tag from './Tag';
+import Tag from './Tag'
 
 export default {
   name: 'Languages',
 
   components: {
-    Tag,
+    Tag
   },
 
   props: {
     LanguagesItems: {
       type: Array,
-      required: true,
-    },
+      required: true
+    }
   }
 }
 </script>

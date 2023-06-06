@@ -1,20 +1,20 @@
 export default [
   {
-    text: 'Sailing',
+    text: 'Sailing'
   },
   {
-    text: 'Brain teasers',
+    text: 'Brain teasers'
   },
   {
-    text: 'Paintball',
+    text: 'Paintball'
   },
   {
-    text: 'Snowboarding',
+    text: 'Snowboarding'
   },
   {
-    text: 'Vintage Audio',
+    text: 'Vintage Audio'
   },
   {
-    text: 'Cars',
-  },
-];
+    text: 'Cars'
+  }
+]

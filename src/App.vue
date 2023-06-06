@@ -6,12 +6,12 @@
 
 <script>
 import Resume from './components/Resume.vue'
-import './style/style.scss';
+import './style/style.scss'
 
 export default {
   name: 'App',
   components: {
-    Resume,
+    Resume
   }
 }
 </script>

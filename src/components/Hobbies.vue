@@ -13,20 +13,20 @@
 
 <script>
 
-import Tag from './Tag';
+import Tag from './Tag'
 
 export default {
   name: 'Hobbies',
 
   components: {
-    Tag,
+    Tag
   },
 
   props: {
     HobbiesItems: {
       type: Array,
-      required: true,
-    },
+      required: true
+    }
   }
 }
 </script>
