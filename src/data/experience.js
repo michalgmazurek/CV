@@ -1,18 +1,18 @@
 export default [
-  {
+    {
     companyName: '1010 Data',
     position: 'Senior Front-end Developer',
     startDate: 'Jul 2021',
     endDate: 'still',
     responsibilities: [
       {
-        point: 'Developing new functionalities and services (Vue, XState, Rest, WebSockets)'
+        point: 'Developing innovative functionalities and services using Vue, XState, Rest, and WebSockets to improve user experience and streamline processes'
       },
       {
-        point: 'Developing new project for big data analysis'
+        point: 'Creating and implementing a new project for big data analysis, enabling more efficient data processing and analysis'
       },
       {
-        point: 'Day to day work with US based team (NY) - fully remote'
+        point: 'Collaboration with a fully remote US-based team in NY on a day-to-day basis, ensuring successful project outcomes'
       }
     ]
   },
@@ -27,25 +27,25 @@ export default [
         point: 'Developing new functionalities and services (Vue, Vuex, GraphQL, Jest, jQuery, JS, Rest)'
       },
       {
-        point: 'Developing, refactor and redesign of internal services (CMS) serving all cash-flow related functionalities in Europe and Latin America'
+        point: 'Developing, refactoring and redesigning internal services (CMS) serving all cash-ow related functionalities in Europe and Latin America'
       },
       {
-        point: 'Developing and refactor of ecommerce functionalities and features (worldwide)'
+        point: 'Developing and refactoring e-commerce functionalities and features (worldwide)'
       },
       {
         point: 'Implementing Google Analytics mechanisms and metrics tools'
       },
       {
-        point: 'Managing Front-end bug-flow for whole company (Sentry)'
+        point: 'Managing Front-end bug-flow for the whole company (Sentry)'
       },
       {
-        point: 'Participation in recruitment - improving process, part of a team responsible for recruitment area in Poland, creating whole culture of trial day'
+        point: 'Participation in recruitment process - improving the process, being part of a team responsible for the recruitment area in Poland, creating the whole culture of the trial day'
       },
       {
         point: 'Conducting inside company workshops'
       },
       {
-        point: 'Role of "buddy" for candidates during their trial day'
+        point: 'Role of "buddy" for candidates during their trial days'
       },
       {
         point: 'Implementing tools for recruitment process like fakeAPI (Node.js) or recruitment task repository'
@@ -84,7 +84,7 @@ export default [
         point: 'Cooperation with german team - part of a team implementing most urgent features on DaWanda'
       },
       {
-        point: 'Rewriting egzisting code into modern and efficient React components, and its implementation in ruby code'
+        point: 'Rewriting existing code into modern and efficient React components, and its implementation in ruby code'
       },
       {
         point: 'Individual project of implementation new search-bar feature with complex autosuggest (React, Redux, HTML, CSS)'
