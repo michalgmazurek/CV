@@ -3,7 +3,7 @@ export default [
     companyName: '1010 Data',
     position: 'Senior Front-end Developer',
     startDate: 'Jul 2021',
-    endDate: 'still',
+    endDate: 'Jul 2022',
     responsibilities: [
       {
         point: 'Developing innovative functionalities and services using Vue, XState, Rest, and WebSockets to improve user experience and streamline processes'
@@ -115,14 +115,7 @@ export default [
     position: 'Recruiter',
     startDate: 'Apr 2016',
     endDate: 'May 2017',
-    responsibilities: [
-      {
-        point: 'Responsible for the end-to-end recruitment process for various positions'
-      },
-      {
-        point: 'IT Recruitment (Front-end, RoR, Python, PHP, JAVA, .NET)'
-      }
-    ]
+    responsibilities: []
   },
 
   {
