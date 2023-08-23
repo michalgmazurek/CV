@@ -3,7 +3,7 @@ export default [
     companyName: '1010 Data',
     position: 'Senior Front-end Developer',
     startDate: 'Jul 2021',
-    endDate: 'Jul 2022',
+    endDate: 'Jul 2023',
     responsibilities: [
       {
         point: 'Developing innovative functionalities and services using Vue, XState, Rest, and WebSockets to improve user experience and streamline processes'
