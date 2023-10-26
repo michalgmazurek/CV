@@ -6,7 +6,7 @@
     <ul class="contact">
       <li class="text">
         <span class="fa fa-phone" aria-hidden="true">
-        </span>790 613 813
+        </span>+48 790 613 813
       </li>
       <li class="text">
         <span class="fa fa-envelope-o" aria-hidden="true"></span>

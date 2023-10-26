@@ -1,5 +1,17 @@
 export default [
     {
+      companyName: 'Freelance',
+      position: '',
+      startDate: 'Jul 2020',
+      endDate: 'till now',
+      responsibilities: [
+        {
+          point: 'Developing software as a Freelancer/International Contractor'
+        },
+      ]
+    },
+
+    {
     companyName: '1010 Data',
     position: 'Senior Front-end Developer',
     startDate: 'Jul 2021',
@@ -64,9 +76,6 @@ export default [
       },
       {
         point: 'Developing internal services (CMS) from scratch(Angular 6, TypeScript, SCSS)'
-      },
-      {
-        point: 'Writing documentation'
       }
     ]
   },
@@ -89,9 +98,6 @@ export default [
       {
         point: 'Individual project of implementation new search-bar feature with complex autosuggest (React, Redux, HTML, CSS)'
       },
-      {
-        point: 'Writing documentation'
-      }
     ]
   },
 
@@ -102,10 +108,10 @@ export default [
     endDate: 'Feb 2018',
     responsibilities: [
       {
-        point: 'Maintenance of the React-based webpage (React, HTML, CSS)'
+        point: 'Developing front-end of the internal web applications (React, Redux, JS, Twig, HTML, CSS, Jest)'
       },
       {
-        point: 'Developing front-end of the internal web applications (React, Redux, JS, Twig, HTML, CSS, Jest)'
+        point: 'Writing documentation'
       }
     ]
   },
