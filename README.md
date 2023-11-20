@@ -6,9 +6,9 @@ https://michalgmazurek.github.io/CV
 ## Deploy
 ```
 yarn build
-git subtree push --prefix dist origin gh-pages
-git checkout gh-pages
 ```
+rename `dist` folder into `docs`
+
 and push commit :)
 
 ## Project setup
