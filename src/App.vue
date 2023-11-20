@@ -1,7 +1,5 @@
 <template>
-  <div id="app">
-    <Resume />
-  </div>
+  <Resume />
 </template>
 
 <script>
