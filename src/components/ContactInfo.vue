@@ -6,28 +6,34 @@
     <ul class="contact">
       <li class="text">
         <span class="fa fa-phone" aria-hidden="true">
-        </span>+48 790 613 813
+        </span>{{ generalInformationItems.telephone }}
       </li>
       <li class="text">
         <span class="fa fa-envelope-o" aria-hidden="true"></span>
         <a
-          href="mailto:michalgmazurek@gmail.com"
+          :href="mailto"
           target="_blank"
-        >michalgmazurek@gmail.com</a>
+        >
+          {{ generalInformationItems.email }}
+        </a>
       </li>
       <li class="text">
         <span class="fa fa-github" aria-hidden="true"></span>
         <a
-          href="https://github.com/michalgmazurek"
+          :href="githubLink"
           target="_blank"
-        >github.com/michalgmazurek</a>
+        > 
+          {{ generalInformationItems.github }}
+        </a>
       </li>
       <li class="text">
         <span class="fa fa-linkedin" aria-hidden="true"></span>
         <a
-          href="https://www.linkedin.com/in/michalgmazurek/"
+          :href="linkedinLink"
           target="_blank"
-        >linkedin.com/in/michalgmazurek</a>
+        >
+          {{generalInformationItems.linkedin}}
+        </a>
       </li>
     </ul>
     <div class="print-button__container">
@@ -42,9 +48,28 @@
 </template>
 
 <script>
+import { GENERAL_INFORMATION } from '../data/generalInfo';
 
 export default {
   name: 'ContactInfo',
+
+  computed: {
+    generalInformationItems() {
+      return {...GENERAL_INFORMATION}
+    },
+
+    linkedinLink() {
+      return `https://www.${this.generalInformationItems?.linkedin}`
+    },
+
+    mailto() {
+      return `mailto:${this.generalInformationItems?.email}`
+    },
+
+    githubLink() {
+      return `https://${this.generalInformationItems?.github}`
+    }
+  },
 
   methods: {
     print() {

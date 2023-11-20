@@ -1,15 +1,22 @@
 <template>
   <article>
-    <h1 class="header">Michał Mazurek</h1>
+    <h1 class="header">{{generalInformationItems.name}} {{generalInformationItems.surname}}</h1>
     <h2 class="subheader subheader--position">
-      Senior Front-end Developer
+      {{ generalInformationItems.position }}
     </h2>
   </article>
 </template>
 
 <script>
+import { GENERAL_INFORMATION } from '../data/generalInfo';
 
 export default {
-  name: 'Name'
+  name: 'Name',
+
+  computed: {
+    generalInformationItems() {
+      return {...GENERAL_INFORMATION};
+    }
+  }
 }
 </script>

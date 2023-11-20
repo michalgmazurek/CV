@@ -3,9 +3,9 @@
     <p class="subheader">Languages</p>
     <div class="tag__container">
       <tag
-        v-for="(LanguagesItem, n) in LanguagesItems"
-        :key="`language-${n}`"
-        :text="LanguagesItem.text"
+        v-for="languagesItem in languagesItems"
+        :key="`language-${languagesItem.id}`"
+        :text="languagesItem.text"
         :wider="true"
       />
     </div>
@@ -24,7 +24,7 @@ export default {
   },
 
   props: {
-    LanguagesItems: {
+    languagesItems: {
       type: Array,
       required: true
     }

@@ -2,8 +2,8 @@
   <div>
     <ul class="list">
       <responsibilities-item
-        v-for="(responsibility, n) in responsibilities"
-        :key="`${companyName}-${n}`"
+        v-for="responsibility in responsibilities"
+        :key="`${companyName}-${responsibility.id}`"
         :responsibility="responsibility"
       />
     </ul>

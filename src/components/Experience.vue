@@ -2,8 +2,8 @@
   <article>
     <p class="subheader">experience</p>
     <experience-item
-      v-for="(experienceItem, n) in experienceItems"
-      :key="`experience-${experienceItem.companyName}-${n}`"
+      v-for="experienceItem in experienceItems"
+      :key="`experience-${experienceItem.id}`"
       :company-name="experienceItem.companyName"
       :position="experienceItem.position"
       :start-date="experienceItem.startDate"

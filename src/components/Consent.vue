@@ -31,8 +31,6 @@ export default {
     position: relative;
     top: -50px;
     margin-bottom: -50;
-
-    //margin-top: 100px;
   }
 }
 

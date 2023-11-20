@@ -2,12 +2,12 @@
   <article>
     <p class="subheader">education</p>
     <education-item
-      v-for="(EducationItem, n) in EducationItems"
-      :key="`experience-${EducationItem.companyName}-${n}`"
-      :company-name="EducationItem.companyName"
-      :position="EducationItem.position"
-      :start-date="EducationItem.startDate"
-      :end-date="EducationItem.endDate"
+      v-for="educationItem in educationItems"
+      :key="`experience-${educationItem.id}`"
+      :company-name="educationItem.companyName"
+      :position="educationItem.position"
+      :start-date="educationItem.startDate"
+      :end-date="educationItem.endDate"
     />
   </article>
 </template>
@@ -24,7 +24,7 @@ export default {
   },
 
   props: {
-    EducationItems: {
+    educationItems: {
       type: Array,
       required: true
     }

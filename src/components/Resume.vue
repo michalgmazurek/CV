@@ -24,11 +24,11 @@ import Skills from './Skills'
 import Languages from './Languages'
 import Hobbies from './Hobbies'
 import Consent from './Consent'
-import EDUCATION from '../data/education'
-import EXPERIENCE from '../data/experience'
-import SKILLS from '../data/skills'
-import LANGUAGES from '../data/languages'
-import HOBBIES from '../data/hobbies'
+import {EDUCATION} from '../data/education'
+import {EXPERIENCE} from '../data/experience'
+import {SKILLS} from '../data/skills'
+import {LANGUAGES} from '../data/languages'
+import {HOBBIES} from '../data/hobbies'
 
 export default {
   name: 'Resume',

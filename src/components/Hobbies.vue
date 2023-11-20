@@ -3,9 +3,9 @@
     <p class="subheader">Hobbies</p>
     <div class="tag__container">
       <tag
-        v-for="(HobbiesItem, n) in HobbiesItems"
-        :key="`hobby-${n}`"
-        :text="HobbiesItem.text"
+        v-for="hobbiesItem in hobbiesItems"
+        :key="`hobby-${hobbiesItem.id}`"
+        :text="hobbiesItem.text"
       />
     </div>
   </article>
@@ -23,7 +23,7 @@ export default {
   },
 
   props: {
-    HobbiesItems: {
+    hobbiesItems: {
       type: Array,
       required: true
     }
