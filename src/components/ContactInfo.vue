@@ -1,7 +1,7 @@
 <template>
   <article class="contact-info">
     <div class="photo-container">
-      <img class="photo" src="../assets/CV1.png" alt="Photo">
+      <img class="photo" src="../assets/img/CV1.png" alt="Photo">
     </div>
     <ul class="contact">
       <li class="text">
