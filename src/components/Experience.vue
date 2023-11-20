@@ -1,9 +1,11 @@
 <template>
   <article>
-    <p class="subheader">experience</p>
-    <experience-item
-      v-for="(experienceItem, n) in experienceItems"
-      :key="`experience-${experienceItem.companyName}-${n}`"
+    <p class="subheader">
+      experience
+    </p>
+    <ExperienceItem
+      v-for="experienceItem in experienceItems"
+      :key="`experience-${experienceItem.id}`"
       :company-name="experienceItem.companyName"
       :position="experienceItem.position"
       :start-date="experienceItem.startDate"
@@ -19,16 +21,14 @@ import ExperienceItem from './ExperienceItem';
 
 export default {
   name: 'Experience',
-
   components: {
     ExperienceItem,
   },
-
   props: {
     experienceItems: {
       type: Array,
       required: true,
     },
-  }
-}
+  },
+};
 </script>

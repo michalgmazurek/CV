@@ -1,9 +1,9 @@
 <template>
   <div>
     <ul class="list">
-      <responsibilities-item
-        v-for="(responsibility, n) in responsibilities"
-        :key="`${companyName}-${n}`"
+      <ResponsibilitiesItem
+        v-for="responsibility in responsibilities"
+        :key="`${companyName}-${responsibility.id}`"
         :responsibility="responsibility"
       />
     </ul>
@@ -16,11 +16,9 @@ import ResponsibilitiesItem from './ResponsibilitiesItem';
 
 export default {
   name: 'Responsibilities',
-
   components: {
     ResponsibilitiesItem,
   },
-
   props: {
     responsibilities: {
       type: Array,
@@ -29,7 +27,7 @@ export default {
     companyName: {
       type: String,
       required: true,
-    }
-  }
-}
+    },
+  },
+};
 </script>

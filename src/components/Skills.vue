@@ -1,11 +1,13 @@
 <template>
   <article>
-    <p class="subheader">skills</p>
+    <p class="subheader">
+      skills
+    </p>
     <div class="tag__container">
-      <tag
-        v-for="(SkillsItem, n) in SkillsItems"
-        :key="`skill-${n}`"
-        :text="SkillsItem.text"
+      <Tag
+        v-for="skillsItem in skillsItems"
+        :key="`skill-${skillsItem.id}`"
+        :text="skillsItem.text"
       />
     </div>
   </article>
@@ -17,16 +19,14 @@ import Tag from './Tag';
 
 export default {
   name: 'Skills',
-
   components: {
     Tag,
   },
-
   props: {
-    SkillsItems: {
+    skillsItems: {
       type: Array,
       required: true,
     },
-  }
-}
+  },
+};
 </script>
