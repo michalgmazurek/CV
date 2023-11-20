@@ -4,7 +4,7 @@ export const EDUCATION = [
     companyName: 'Coders Lab',
     position: 'Become Front-end Developer',
     startDate: 'Sep 2016',
-    endDate: 'Apr 2017'
+    endDate: 'Apr 2017',
   },
 
   {
@@ -12,7 +12,7 @@ export const EDUCATION = [
     companyName: 'Warsaw School of Economics',
     position: 'Master of Arts - International Economics',
     startDate: 'Oct 2013',
-    endDate: 'May 2016'
+    endDate: 'May 2016',
   },
 
   {
@@ -20,6 +20,6 @@ export const EDUCATION = [
     companyName: 'University of Warsaw',
     position: 'Bachelor - Business Administration and Management',
     startDate: 'Oct 2010',
-    endDate: 'Jun 2013'
-  }
-]
+    endDate: 'Jun 2013',
+  },
+];

@@ -13,8 +13,8 @@
 <script>
 
 export default {
-  name: 'Consent'
-}
+  name: 'Consent',
+};
 </script>
 
 <style scoped lang="scss">

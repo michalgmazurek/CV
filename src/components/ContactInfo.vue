@@ -5,11 +5,10 @@
     </div>
     <ul class="contact">
       <li class="text">
-        <span class="fa fa-phone" aria-hidden="true">
-        </span>{{ generalInformationItems.telephone }}
+        <span class="fa fa-phone" aria-hidden="true" />{{ generalInformationItems.telephone }}
       </li>
       <li class="text">
-        <span class="fa fa-envelope-o" aria-hidden="true"></span>
+        <span class="fa fa-envelope-o" aria-hidden="true" />
         <a
           :href="mailto"
           target="_blank"
@@ -18,28 +17,29 @@
         </a>
       </li>
       <li class="text">
-        <span class="fa fa-github" aria-hidden="true"></span>
+        <span class="fa fa-github" aria-hidden="true" />
         <a
           :href="githubLink"
           target="_blank"
-        > 
+        >
           {{ generalInformationItems.github }}
         </a>
       </li>
       <li class="text">
-        <span class="fa fa-linkedin" aria-hidden="true"></span>
+        <span class="fa fa-linkedin" aria-hidden="true" />
         <a
           :href="linkedinLink"
           target="_blank"
         >
-          {{generalInformationItems.linkedin}}
+          {{ generalInformationItems.linkedin }}
         </a>
       </li>
     </ul>
     <div class="print-button__container">
       <button
-        @click="print"
+        type="button"
         class="print-button"
+        @click="print"
       >
         Print
       </button>
@@ -48,35 +48,32 @@
 </template>
 
 <script>
-import { GENERAL_INFORMATION } from '../data/generalInfo';
 
 export default {
   name: 'ContactInfo',
-
-  computed: {
-    generalInformationItems() {
-      return {...GENERAL_INFORMATION}
+  props: {
+    generalInformationItems: {
+      type: Object,
+      required: true,
     },
-
-    linkedinLink() {
-      return `https://www.${this.generalInformationItems?.linkedin}`
-    },
-
-    mailto() {
-      return `mailto:${this.generalInformationItems?.email}`
-    },
-
-    githubLink() {
-      return `https://${this.generalInformationItems?.github}`
-    }
   },
-
+  computed: {
+    linkedinLink() {
+      return `https://www.${this.generalInformationItems?.linkedin}`;
+    },
+    mailto() {
+      return `mailto:${this.generalInformationItems?.email}`;
+    },
+    githubLink() {
+      return `https://${this.generalInformationItems?.github}`;
+    },
+  },
   methods: {
     print() {
-      window.print()
-    }
-  }
-}
+      window.print();
+    },
+  },
+};
 </script>
 
 <style scoped lang="scss">

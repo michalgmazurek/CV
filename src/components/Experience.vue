@@ -1,7 +1,9 @@
 <template>
   <article>
-    <p class="subheader">experience</p>
-    <experience-item
+    <p class="subheader">
+      experience
+    </p>
+    <ExperienceItem
       v-for="experienceItem in experienceItems"
       :key="`experience-${experienceItem.id}`"
       :company-name="experienceItem.companyName"
@@ -15,20 +17,18 @@
 
 <script>
 
-import ExperienceItem from './ExperienceItem'
+import ExperienceItem from './ExperienceItem';
 
 export default {
   name: 'Experience',
-
   components: {
-    ExperienceItem
+    ExperienceItem,
   },
-
   props: {
     experienceItems: {
       type: Array,
-      required: true
-    }
-  }
-}
+      required: true,
+    },
+  },
+};
 </script>

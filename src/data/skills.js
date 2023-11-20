@@ -1,78 +1,78 @@
 export const SKILLS = [
   {
     id: 19,
-    text: 'JS (ES6)'
+    text: 'JS (ES6)',
   },
   {
     id: 18,
-    text: 'TypeScript'
+    text: 'TypeScript',
   },
   {
     id: 17,
-    text: 'Vue'
+    text: 'Vue',
   },
   {
     id: 16,
-    text: 'Vuex'
+    text: 'Vuex',
   },
   {
     id: 15,
-    text: 'XState'
+    text: 'XState',
   },
   {
     id: 14,
-    text: 'React'
+    text: 'React',
   },
   {
     id: 13,
-    text: 'Redux'
+    text: 'Redux',
   },
   {
     id: 12,
-    text: 'Angular 2-6'
+    text: 'Angular 2-6',
   },
   {
     id: 11,
-    text: 'jQuery'
+    text: 'jQuery',
   },
   {
     id: 10,
-    text: 'Ajax'
+    text: 'Ajax',
   },
   {
     id: 9,
-    text: 'Rest'
+    text: 'Rest',
   },
   {
     id: 8,
-    text: 'GraphQL'
+    text: 'GraphQL',
   },
   {
     id: 7,
-    text: 'Jest'
+    text: 'Jest',
   },
   {
     id: 6,
-    text: 'Webpack'
+    text: 'Webpack',
   },
   {
     id: 5,
-    text: 'Docker'
+    text: 'Docker',
   },
   {
     id: 4,
-    text: 'HTML'
+    text: 'HTML',
   },
   {
     id: 3,
-    text: 'CSS'
+    text: 'CSS',
   },
   {
     id: 2,
-    text: 'SCSS'
+    text: 'SCSS',
   },
   {
     id: 1,
-    text: 'Bootstrap'
-  }
-]
+    text: 'Bootstrap',
+  },
+];

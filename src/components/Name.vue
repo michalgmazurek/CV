@@ -1,6 +1,8 @@
 <template>
   <article>
-    <h1 class="header">{{generalInformationItems.name}} {{generalInformationItems.surname}}</h1>
+    <h1 class="header">
+      {{ generalInformationItems.name }} {{ generalInformationItems.surname }}
+    </h1>
     <h2 class="subheader subheader--position">
       {{ generalInformationItems.position }}
     </h2>
@@ -8,15 +10,14 @@
 </template>
 
 <script>
-import { GENERAL_INFORMATION } from '../data/generalInfo';
 
 export default {
   name: 'Name',
-
-  computed: {
-    generalInformationItems() {
-      return {...GENERAL_INFORMATION};
-    }
-  }
-}
+  props: {
+    generalInformationItems: {
+      type: Object,
+      required: true,
+    },
+  },
+};
 </script>

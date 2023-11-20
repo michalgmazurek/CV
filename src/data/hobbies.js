@@ -1,26 +1,26 @@
 export const HOBBIES = [
   {
     id: 6,
-    text: 'Sailing'
+    text: 'Sailing',
   },
   {
     id: 5,
-    text: 'Brain teasers'
+    text: 'Brain teasers',
   },
   {
     id: 4,
-    text: 'Paintball'
+    text: 'Paintball',
   },
   {
     id: 3,
-    text: 'Snowboarding'
+    text: 'Snowboarding',
   },
   {
     id: 2,
-    text: 'Vintage Audio'
+    text: 'Vintage Audio',
   },
   {
     id: 1,
-    text: 'Cars'
-  }
-]
+    text: 'Cars',
+  },
+];

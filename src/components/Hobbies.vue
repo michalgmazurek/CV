@@ -1,8 +1,10 @@
 <template>
   <article>
-    <p class="subheader">Hobbies</p>
+    <p class="subheader">
+      Hobbies
+    </p>
     <div class="tag__container">
-      <tag
+      <Tag
         v-for="hobbiesItem in hobbiesItems"
         :key="`hobby-${hobbiesItem.id}`"
         :text="hobbiesItem.text"
@@ -13,20 +15,18 @@
 
 <script>
 
-import Tag from './Tag'
+import Tag from './Tag';
 
 export default {
   name: 'Hobbies',
-
   components: {
-    Tag
+    Tag,
   },
-
   props: {
     hobbiesItems: {
       type: Array,
-      required: true
-    }
-  }
-}
+      required: true,
+    },
+  },
+};
 </script>

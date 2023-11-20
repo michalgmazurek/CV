@@ -1,11 +1,15 @@
 <template>
   <div class="point">
-    <p class="company">{{ companyName }}</p>
-    <p class="position">{{ position }}</p>
+    <p class="company">
+      {{ companyName }}
+    </p>
+    <p class="position">
+      {{ position }}
+    </p>
     <p class="text">
       <span class="fa fa-calendar" aria-hidden="true">{{ startDate }} - {{ endDate }}</span>
     </p>
-    <responsibilities
+    <Responsibilities
       :company-name="companyName"
       :responsibilities="responsibilities"
     />
@@ -14,36 +18,34 @@
 
 <script>
 
-import Responsibilities from './Responsibilities'
+import Responsibilities from './Responsibilities';
 
 export default {
   name: 'ExperienceItem',
-
   components: {
-    Responsibilities
+    Responsibilities,
   },
-
   props: {
     companyName: {
       type: String,
-      required: true
+      required: true,
     },
     position: {
       type: String,
-      required: true
+      required: true,
     },
     startDate: {
       type: String,
-      required: true
+      required: true,
     },
     endDate: {
       type: String,
-      required: true
+      required: true,
     },
     responsibilities: {
       type: Array,
-      required: true
-    }
-  }
-}
+      required: true,
+    },
+  },
+};
 </script>

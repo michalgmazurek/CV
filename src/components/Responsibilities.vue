@@ -1,7 +1,7 @@
 <template>
   <div>
     <ul class="list">
-      <responsibilities-item
+      <ResponsibilitiesItem
         v-for="responsibility in responsibilities"
         :key="`${companyName}-${responsibility.id}`"
         :responsibility="responsibility"
@@ -12,24 +12,22 @@
 
 <script>
 
-import ResponsibilitiesItem from './ResponsibilitiesItem'
+import ResponsibilitiesItem from './ResponsibilitiesItem';
 
 export default {
   name: 'Responsibilities',
-
   components: {
-    ResponsibilitiesItem
+    ResponsibilitiesItem,
   },
-
   props: {
     responsibilities: {
       type: Array,
-      required: true
+      required: true,
     },
     companyName: {
       type: String,
-      required: true
-    }
-  }
-}
+      required: true,
+    },
+  },
+};
 </script>

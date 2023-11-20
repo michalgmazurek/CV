@@ -1,8 +1,10 @@
 <template>
   <article>
-    <p class="subheader">skills</p>
+    <p class="subheader">
+      skills
+    </p>
     <div class="tag__container">
-      <tag
+      <Tag
         v-for="skillsItem in skillsItems"
         :key="`skill-${skillsItem.id}`"
         :text="skillsItem.text"
@@ -13,20 +15,18 @@
 
 <script>
 
-import Tag from './Tag'
+import Tag from './Tag';
 
 export default {
   name: 'Skills',
-
   components: {
-    Tag
+    Tag,
   },
-
   props: {
     skillsItems: {
       type: Array,
-      required: true
-    }
-  }
-}
+      required: true,
+    },
+  },
+};
 </script>
