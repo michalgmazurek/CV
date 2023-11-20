@@ -1,7 +1,8 @@
 <template>
   <article class="contact-info">
     <div class="photo-container">
-      <img class="photo" src="../assets/img/CV1.png" alt="Photo">
+      <img v-if="isdev" class="photo" src="../assets/CV1.png" alt="Photo" lazy>
+      <img v-else class="photo" :src="photoUrl" alt="Photo" lazy>
     </div>
     <ul class="contact">
       <li class="text">
@@ -58,6 +59,9 @@ export default {
     },
   },
   computed: {
+    isdev() {
+      return window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+    },
     linkedinLink() {
       return `https://www.${this.generalInformationItems?.linkedin}`;
     },
@@ -66,6 +70,9 @@ export default {
     },
     githubLink() {
       return `https://${this.generalInformationItems?.github}`;
+    },
+    photoUrl() {
+      return `${process.env.BASE_URL}/assets/img/CV1.png`;
     },
   },
   methods: {
