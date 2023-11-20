@@ -72,7 +72,7 @@ export default {
       return `https://${this.generalInformationItems?.github}`;
     },
     photoUrl() {
-      return `${process.env.BASE_URL}/assets/img/CV1.png`;
+      return `${process.env.BASE_URL}/img/CV1.png`;
     },
   },
   methods: {
