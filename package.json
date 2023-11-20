@@ -1,26 +1,30 @@
 {
   "name": "cv",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "eslint": "vue-cli-service lint"
   },
   "dependencies": {
-    "core-js": "^3.6.5",
-    "sass-loader": "^10.0.2",
-    "vue": "^2.6.11"
+    "core-js": "^3.32.1",
+    "gh-pages": "^6.1.0",
+    "sass-loader": "^10.4.1",
+    "vue": "^2.7.14"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^4.5.0",
-    "@vue/cli-plugin-eslint": "^4.5.0",
-    "@vue/cli-service": "^4.5.0",
+    "@babel/eslint-parser": "^7.19.1",
+    "@vue/cli-plugin-babel": "^4.5.19",
+    "@vue/cli-plugin-eslint": "^4.5.19",
+    "@vue/cli-service": "^4.5.19",
+    "@vue/eslint-config-airbnb": "^7.0.0",
     "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^6.2.2",
-    "node-sass": "^4.14.1",
-    "vue-template-compiler": "^2.6.11"
+    "eslint": "^7.32",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-vue": "^9.17.0",
+    "sass": "^1.66.1",
+    "vue-template-compiler": "^2.7.14"
   },
   "eslintConfig": {
     "root": true,

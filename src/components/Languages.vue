@@ -1,12 +1,14 @@
 <template>
   <article>
-    <p class="subheader">Languages</p>
+    <p class="subheader">
+      Languages
+    </p>
     <div class="tag__container">
-      <tag
-        v-for="(LanguagesItem, n) in LanguagesItems"
-        :key="`language-${n}`"
-        :text="LanguagesItem.text"
-        :wider="true"
+      <Tag
+        v-for="languagesItem in languagesItems"
+        :key="`language-${languagesItem.id}`"
+        :text="languagesItem.text"
+        wider
       />
     </div>
   </article>
@@ -18,16 +20,14 @@ import Tag from './Tag';
 
 export default {
   name: 'Languages',
-
   components: {
     Tag,
   },
-
   props: {
-    LanguagesItems: {
+    languagesItems: {
       type: Array,
       required: true,
     },
-  }
-}
+  },
+};
 </script>

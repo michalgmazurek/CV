@@ -8,12 +8,11 @@
 
 export default {
   name: 'ResponsibilitiesItem',
-
   props: {
     responsibility: {
       type: Object,
       required: true,
-    }
-  }
-}
+    },
+  },
+};
 </script>

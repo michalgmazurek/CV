@@ -5,35 +5,41 @@
     </div>
     <ul class="contact">
       <li class="text">
-        <span class="fa fa-phone" aria-hidden="true">
-        </span>790 613 813
+        <span class="fa fa-phone" aria-hidden="true" />{{ generalInformationItems.telephone }}
       </li>
       <li class="text">
-        <span class="fa fa-envelope-o" aria-hidden="true"></span>
+        <span class="fa fa-envelope-o" aria-hidden="true" />
         <a
-          href="mailto:michalgmazurek@gmail.com"
+          :href="mailto"
           target="_blank"
-        >michalgmazurek@gmail.com</a>
+        >
+          {{ generalInformationItems.email }}
+        </a>
       </li>
       <li class="text">
-        <span class="fa fa-github" aria-hidden="true"></span>
+        <span class="fa fa-github" aria-hidden="true" />
         <a
-          href="https://github.com/michalgmazurek"
+          :href="githubLink"
           target="_blank"
-        >github.com/michalgmazurek</a>
+        >
+          {{ generalInformationItems.github }}
+        </a>
       </li>
       <li class="text">
-        <span class="fa fa-linkedin" aria-hidden="true"></span>
+        <span class="fa fa-linkedin" aria-hidden="true" />
         <a
-          href="https://www.linkedin.com/in/michalgmazurek/"
+          :href="linkedinLink"
           target="_blank"
-        >linkedin.com/in/michalgmazurek</a>
+        >
+          {{ generalInformationItems.linkedin }}
+        </a>
       </li>
     </ul>
     <div class="print-button__container">
       <button
-        @click="print"
+        type="button"
         class="print-button"
+        @click="print"
       >
         Print
       </button>
@@ -45,78 +51,94 @@
 
 export default {
   name: 'ContactInfo',
-
+  props: {
+    generalInformationItems: {
+      type: Object,
+      required: true,
+    },
+  },
+  computed: {
+    linkedinLink() {
+      return `https://www.${this.generalInformationItems?.linkedin}`;
+    },
+    mailto() {
+      return `mailto:${this.generalInformationItems?.email}`;
+    },
+    githubLink() {
+      return `https://${this.generalInformationItems?.github}`;
+    },
+  },
   methods: {
     print() {
       window.print();
     },
-  }
-}
+  },
+};
 </script>
 
 <style scoped lang="scss">
-  .contact-info {
-    display: flex;
-    flex-direction: row;
-    align-content: space-around;
-    justify-content: left;
-  }
+.contact-info {
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  justify-content: left;
+}
 
-  .photo {
-    width: 150px;
-    border-radius: 50%;
-    margin: 20px 20px 20px 0;
-  }
+.photo {
+  width: 150px;
+  border-radius: 50%;
+  margin: 20px 20px 20px 0;
+}
 
-  .contact {
-    margin-left: 30px;
-    align-self: center;
-    list-style: none;
-    font-size: 12px;
+.contact {
+  margin-left: 30px;
+  align-self: center;
+  list-style: none;
+  font-size: 12px;
 
-    .fa {
-      margin-right: 15px;
-      color: #2ECC71;
-      font-weight: 600;
-      width: 15px;
-    }
-
-    li {
-      width: 230px;
-    }
-  }
-
-  .print-button {
-    display: block;
-    height: 30px;
-    width: 120px;
-    background-color: #2ECC71;
-    color: #EEEEEE;
-    text-align: center;
-    border: none;
-    border-radius: 10px;
-    line-height: 30px;
+  .fa {
+    margin-right: 15px;
+    color: #2ECC71;
     font-weight: 600;
-    font-size: 13px;
-    margin: auto;
-    cursor: pointer;
-    outline: none;
+    width: 15px;
+  }
 
-    &__container {
-      display: flex;
-      margin-left: auto;
+  li {
+    width: 230px;
+  }
+}
 
-      @media print {
-        display: none;
-      }
+.print-button {
+  display: block;
+  height: 30px;
+  width: 120px;
+  background-color: #2ECC71;
+  color: #EEEEEE;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  line-height: 30px;
+  font-weight: 600;
+  font-size: 13px;
+  margin: auto;
+  cursor: pointer;
+  outline: none;
+
+  &__container {
+    display: flex;
+    margin-left: auto;
+
+    @media print {
+      display: none;
     }
   }
+}
 
-  a {
-    text-decoration: none;
-  }
+a {
+  text-decoration: none;
+}
 
-  button:active {
-    background-color: #4daf7c;
-  }
+button:active {
+  background-color: #4daf7c;
+}
 </style>

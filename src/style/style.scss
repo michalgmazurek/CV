@@ -11,26 +11,26 @@
 }
 
 .text {
-  font-size: 12px;
+  font-size: 13px;
   line-height: 20px;
-  word-wrap: break-spaces;
+  word-wrap: break-word;
 }
 
 .header {
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 24px;
+  padding-top: 8px;
 }
 
 .subheader {
-  font-size: 15px;
-  line-height: 25px;
+  font-size: 16px;
+  padding: 13px 0;
   color: #2ECC71;
   text-transform: uppercase;
   margin-top: 15px;
   margin-bottom: 10px;
 
   &--position {
-    font-size: 14px;
+    font-size: 15px;
     margin-bottom: 20px;
     line-height: 20px;
     margin-top: 0;
@@ -70,10 +70,6 @@
 .point {
   margin-bottom: 15px;
   break-after: avoid;
-
-  @media print {
-    break-inside: avoid;
-  }
 }
 
 .tag {
@@ -99,9 +95,5 @@
     flex-wrap: wrap;
     margin-left: -7px;
     margin-right: -7px;
-
-    @media print {
-      break-inside: avoid;
-    }
   }
 }
