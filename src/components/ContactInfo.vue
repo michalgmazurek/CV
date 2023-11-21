@@ -5,6 +5,7 @@
         class="photo"
         src="https://michalgmazurek.github.io/CV/img/CV1.webp"
         alt="Photo"
+        lazy
       />
     </div>
     <ul class="contact">
