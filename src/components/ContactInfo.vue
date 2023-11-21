@@ -1,79 +1,62 @@
 <template>
   <article class="contact-info">
     <div class="photo-container">
-      <img class="photo" src="https://michalgmazurek.github.io/CV/img/CV1.webp" alt="Photo">
+      <img
+        class="photo"
+        src="https://michalgmazurek.github.io/CV/img/CV1.webp"
+        alt="Photo"
+      />
     </div>
     <ul class="contact">
       <li class="text">
-        <span class="fa fa-phone" aria-hidden="true" />{{ generalInformationItems.telephone }}
+        <span class="fa fa-phone" aria-hidden="true" />{{
+          generalInformationItem.telephone
+        }}
       </li>
       <li class="text">
         <span class="fa fa-envelope-o" aria-hidden="true" />
-        <a
-          :href="mailto"
-          target="_blank"
-        >
-          {{ generalInformationItems.email }}
+        <a :href="mailto" target="_blank">
+          {{ generalInformationItem.email }}
         </a>
       </li>
       <li class="text">
         <span class="fa fa-github" aria-hidden="true" />
-        <a
-          :href="githubLink"
-          target="_blank"
-        >
-          {{ generalInformationItems.github }}
+        <a :href="githubLink" target="_blank">
+          {{ generalInformationItem.github }}
         </a>
       </li>
       <li class="text">
         <span class="fa fa-linkedin" aria-hidden="true" />
-        <a
-          :href="linkedinLink"
-          target="_blank"
-        >
-          {{ generalInformationItems.linkedin }}
+        <a :href="linkedinLink" target="_blank">
+          {{ generalInformationItem.linkedin }}
         </a>
       </li>
     </ul>
     <div class="print-button__container">
-      <button
-        type="button"
-        class="print-button"
-        @click="print"
-      >
+      <button type="button" class="print-button" @click="print">
         Print
       </button>
     </div>
   </article>
 </template>
 
-<script>
+<script setup>
+import { computed } from 'vue';
 
-export default {
-  name: 'ContactInfo',
-  props: {
-    generalInformationItems: {
-      type: Object,
-      required: true,
-    },
+const props = defineProps({
+  generalInformationItem: {
+    type: Object,
+    required: true,
   },
-  computed: {
-    linkedinLink() {
-      return `https://www.${this.generalInformationItems?.linkedin}`;
-    },
-    mailto() {
-      return `mailto:${this.generalInformationItems?.email}`;
-    },
-    githubLink() {
-      return `https://${this.generalInformationItems?.github}`;
-    },
-  },
-  methods: {
-    print() {
-      window.print();
-    },
-  },
-};
+});
+
+const linkedinLink = computed(
+  () => `https://www.${props.generalInformationItem?.linkedin}`
+);
+const mailto = computed(() => `mailto:${props.generalInformationItem?.email}`);
+const githubLink = computed(
+  () => `https://${props.generalInformationItem?.github}`
+);
 </script>
 
 <style scoped lang="scss">
@@ -98,7 +81,7 @@ export default {
 
   .fa {
     margin-right: 15px;
-    color: #2ECC71;
+    color: #2ecc71;
     font-weight: 600;
     width: 15px;
   }
@@ -112,8 +95,8 @@ export default {
   display: block;
   height: 30px;
   width: 120px;
-  background-color: #2ECC71;
-  color: #EEEEEE;
+  background-color: #2ecc71;
+  color: #eeeeee;
   text-align: center;
   border: none;
   border-radius: 10px;

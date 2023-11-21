@@ -1,8 +1,6 @@
 <template>
   <article>
-    <p class="subheader">
-      Languages
-    </p>
+    <h2>Languages</h2>
     <div class="tag__container">
       <Tag
         v-for="languagesItem in languagesItems"
@@ -14,20 +12,13 @@
   </article>
 </template>
 
-<script>
-
+<script setup>
 import Tag from './Tag';
 
-export default {
-  name: 'Languages',
-  components: {
-    Tag,
+defineProps({
+  languagesItems: {
+    type: Array,
+    required: true,
   },
-  props: {
-    languagesItems: {
-      type: Array,
-      required: true,
-    },
-  },
-};
+});
 </script>

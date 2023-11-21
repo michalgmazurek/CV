@@ -1,8 +1,6 @@
 <template>
   <article>
-    <p class="subheader">
-      Hobbies
-    </p>
+    <h2>Hobbies</h2>
     <div class="tag__container">
       <Tag
         v-for="hobbiesItem in hobbiesItems"
@@ -13,20 +11,13 @@
   </article>
 </template>
 
-<script>
-
+<script setup>
 import Tag from './Tag';
 
-export default {
-  name: 'Hobbies',
-  components: {
-    Tag,
+defineProps({
+  hobbiesItems: {
+    type: Array,
+    required: true,
   },
-  props: {
-    hobbiesItems: {
-      type: Array,
-      required: true,
-    },
-  },
-};
+});
 </script>

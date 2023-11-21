@@ -1,13 +1,15 @@
 <template>
   <div class="point">
-    <p class="company">
+    <h3>
       {{ companyName }}
-    </p>
-    <p class="position">
+    </h3>
+    <h4>
       {{ position }}
-    </p>
+    </h4>
     <p class="text">
-      <span class="fa fa-calendar" aria-hidden="true">{{ startDate }} - {{ endDate }}</span>
+      <span class="fa fa-calendar" aria-hidden="true">
+        {{ startDate }} - {{ endDate }}
+      </span>
     </p>
     <Responsibilities
       :company-name="companyName"
@@ -16,36 +18,29 @@
   </div>
 </template>
 
-<script>
-
+<script setup>
 import Responsibilities from './Responsibilities';
 
-export default {
-  name: 'ExperienceItem',
-  components: {
-    Responsibilities,
+defineProps({
+  companyName: {
+    type: String,
+    required: true,
   },
-  props: {
-    companyName: {
-      type: String,
-      required: true,
-    },
-    position: {
-      type: String,
-      required: true,
-    },
-    startDate: {
-      type: String,
-      required: true,
-    },
-    endDate: {
-      type: String,
-      required: true,
-    },
-    responsibilities: {
-      type: Array,
-      required: true,
-    },
+  position: {
+    type: String,
+    required: true,
   },
-};
+  startDate: {
+    type: String,
+    required: true,
+  },
+  endDate: {
+    type: String,
+    required: true,
+  },
+  responsibilities: {
+    type: Array,
+    required: true,
+  },
+});
 </script>

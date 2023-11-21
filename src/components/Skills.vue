@@ -1,8 +1,6 @@
 <template>
   <article>
-    <p class="subheader">
-      skills
-    </p>
+    <h2>skills</h2>
     <div class="tag__container">
       <Tag
         v-for="skillsItem in skillsItems"
@@ -13,20 +11,13 @@
   </article>
 </template>
 
-<script>
-
+<script setup>
 import Tag from './Tag';
 
-export default {
-  name: 'Skills',
-  components: {
-    Tag,
+defineProps({
+  skillsItems: {
+    type: Array,
+    required: true,
   },
-  props: {
-    skillsItems: {
-      type: Array,
-      required: true,
-    },
-  },
-};
+});
 </script>

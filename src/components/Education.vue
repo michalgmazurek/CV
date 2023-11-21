@@ -1,8 +1,6 @@
 <template>
   <article>
-    <p class="subheader">
-      education
-    </p>
+    <h2>education</h2>
     <EducationItem
       v-for="educationItem in educationItems"
       :key="`experience-${educationItem.id}`"
@@ -14,20 +12,13 @@
   </article>
 </template>
 
-<script>
-
+<script setup>
 import EducationItem from './EducationItem';
 
-export default {
-  name: 'Education',
-  components: {
-    EducationItem,
+defineProps({
+  educationItems: {
+    type: Array,
+    required: true,
   },
-  props: {
-    educationItems: {
-      type: Array,
-      required: true,
-    },
-  },
-};
+});
 </script>

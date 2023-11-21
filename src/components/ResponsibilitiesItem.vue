@@ -4,15 +4,11 @@
   </li>
 </template>
 
-<script>
-
-export default {
-  name: 'ResponsibilitiesItem',
-  props: {
-    responsibility: {
-      type: Object,
-      required: true,
-    },
+<script setup>
+defineProps({
+  responsibility: {
+    type: Object,
+    required: true,
   },
-};
+});
 </script>

@@ -1,8 +1,6 @@
 <template>
   <article>
-    <p class="subheader">
-      experience
-    </p>
+    <h2>experience</h2>
     <ExperienceItem
       v-for="experienceItem in experienceItems"
       :key="`experience-${experienceItem.id}`"
@@ -15,20 +13,13 @@
   </article>
 </template>
 
-<script>
-
+<script setup>
 import ExperienceItem from './ExperienceItem';
 
-export default {
-  name: 'Experience',
-  components: {
-    ExperienceItem,
+defineProps({
+  experienceItems: {
+    type: Array,
+    required: true,
   },
-  props: {
-    experienceItems: {
-      type: Array,
-      required: true,
-    },
-  },
-};
+});
 </script>
