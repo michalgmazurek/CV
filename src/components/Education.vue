@@ -1,8 +1,6 @@
 <template>
   <article>
-    <p class="subheader">
-      education
-    </p>
+    <h2>Education</h2>
     <EducationItem
       v-for="educationItem in educationItems"
       :key="`experience-${educationItem.id}`"
@@ -15,7 +13,6 @@
 </template>
 
 <script>
-
 import EducationItem from './EducationItem';
 
 export default {

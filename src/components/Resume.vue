@@ -9,7 +9,7 @@
         <Skills :skills-items="skillsItems" />
         <Languages :languages-items="languagesItems" />
         <Hobbies :hobbies-items="hobbiesItems" />
-        <Consent style="page-break-after: auto;" />
+        <Consent />
       </div>
     </section>
   </div>
@@ -72,6 +72,7 @@ export default {
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
+  print-color-adjust: exact;
   -webkit-print-color-adjust: exact;
 
   @media print {
@@ -85,4 +86,3 @@ export default {
   margin-right: 30px;
 }
 </style>
-

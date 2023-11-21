@@ -1,19 +1,20 @@
 <template>
   <div class="point">
-    <p class="company">
+    <h3>
       {{ companyName }}
-    </p>
-    <p class="position">
+    </h3>
+    <h4>
       {{ position }}
-    </p>
+    </h4>
     <p class="text">
-      <span class="fa fa-calendar" aria-hidden="true">{{ startDate }} - {{ endDate }}</span>
+      <span class="fa fa-calendar" aria-hidden="true">
+        {{ startDate }} - {{ endDate }}
+      </span>
     </p>
   </div>
 </template>
 
 <script>
-
 export default {
   name: 'EducationItem',
   props: {

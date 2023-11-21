@@ -1,9 +1,7 @@
 <template>
   <article>
-    <p class="subheader">
-      Hobbies
-    </p>
-    <div class="tag__container">
+    <h2>Hobbies</h2>
+    <div class="tag-container">
       <Tag
         v-for="hobbiesItem in hobbiesItems"
         :key="`hobby-${hobbiesItem.id}`"
@@ -14,7 +12,6 @@
 </template>
 
 <script>
-
 import Tag from './Tag';
 
 export default {
