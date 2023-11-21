@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ul class="list">
+    <ul>
       <ResponsibilitiesItem
         v-for="responsibility in responsibilities"
         :key="`${companyName}-${responsibility.id}`"
@@ -11,7 +11,6 @@
 </template>
 
 <script>
-
 import ResponsibilitiesItem from './ResponsibilitiesItem';
 
 export default {

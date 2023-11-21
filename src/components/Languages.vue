@@ -1,9 +1,7 @@
 <template>
   <article>
-    <p class="subheader">
-      Languages
-    </p>
-    <div class="tag__container">
+    <h2>Languages</h2>
+    <div class="tag-container">
       <Tag
         v-for="languagesItem in languagesItems"
         :key="`language-${languagesItem.id}`"
@@ -15,7 +13,6 @@
 </template>
 
 <script>
-
 import Tag from './Tag';
 
 export default {
