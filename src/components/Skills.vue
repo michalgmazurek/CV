@@ -1,7 +1,7 @@
 <template>
   <article>
-    <h2>skills</h2>
-    <div class="tag__container">
+    <h2>Skills</h2>
+    <div class="tag-container">
       <Tag
         v-for="skillsItem in skillsItems"
         :key="`skill-${skillsItem.id}`"

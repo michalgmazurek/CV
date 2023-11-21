@@ -1,6 +1,6 @@
 <template>
   <article>
-    <h2>experience</h2>
+    <h2>Experience</h2>
     <ExperienceItem
       v-for="experienceItem in experienceItems"
       :key="`experience-${experienceItem.id}`"

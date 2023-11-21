@@ -1,7 +1,7 @@
 <template>
   <article>
     <h2>Hobbies</h2>
-    <div class="tag__container">
+    <div class="tag-container">
       <Tag
         v-for="hobbiesItem in hobbiesItems"
         :key="`hobby-${hobbiesItem.id}`"

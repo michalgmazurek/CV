@@ -34,14 +34,5 @@ const tagClass = computed(() => (props.wider ? 'tag tag--wider' : 'tag'));
   &--wider {
     width: 150px;
   }
-
-  &__container {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    margin-left: -7px;
-    margin-right: -7px;
-  }
 }
 </style>

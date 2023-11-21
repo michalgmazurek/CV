@@ -9,7 +9,7 @@
         <Skills :skills-items="skillsItems" />
         <Languages :languages-items="languagesItems" />
         <Hobbies :hobbies-items="hobbiesItems" />
-        <Consent style="page-break-after: auto" />
+        <Consent />
       </div>
     </section>
   </div>
