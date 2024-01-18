@@ -1,23 +1,27 @@
 export const SKILLS = [
   {
-    id: 19,
+    id: 20,
     text: 'JS (ES6)',
   },
   {
-    id: 18,
-    text: 'TypeScript',
-  },
-  {
-    id: 17,
+    id: 19,
     text: 'Vue',
   },
   {
-    id: 16,
+    id: 18,
+    text: 'Vuetify',
+  },
+  {
+    id: 17,
     text: 'Vuex',
   },
   {
-    id: 15,
+    id: 16,
     text: 'XState',
+  },
+  {
+    id: 15,
+    text: 'TypeScript',
   },
   {
     id: 14,
